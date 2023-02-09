@@ -17,11 +17,12 @@ def atbash(tekst):
             zxc = eng_alfavit.index(letter)
             zxb = reversed_eng_alfavit[zxc]
             itog = itog + zxb
-    easygui.msgbox()
+    easygui.msgbox(
+        msg = itog
+    )
     #print(itog)
 shift =  easygui.enterbox(
-    msg = "Введи сообщение, буба"
-
+    msg = "Введи сообщение, буба".upper()
 )
 shifr = input("Введи сообщение: ").upper()
 atbash(shifr)
